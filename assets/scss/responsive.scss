@@ -1,0 +1,206 @@
+@media screen and (max-width: 1300px) {
+  .header {
+    .title {
+      font-size: 120px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    .title {
+      font-size: 100px !important;
+    }
+  }
+  .flag {
+    .category {
+      &__right {
+        &--link {
+          li {
+            margin-right: 20px !important;
+            font-size: 20px !important;
+          }
+        }
+
+        &--social {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    .title {
+      font-size: 80px !important;
+    }
+  }
+
+  .about {
+    grid-template-columns: 100% !important;
+
+    grid-gap: 40px;
+  }
+
+  .flag {
+    .category {
+      &__left {
+        font-size: 26px !important;
+      }
+      &__right {
+        flex-direction: column;
+        //display: none !important;
+        justify-content: start;
+
+        // &--link {
+        //   li {
+        //     margin-right: 20px !important;
+
+        //   }
+        // }
+      }
+    }
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+// @media screen and (min-width: 769px) and (max-width: 800px) {
+//   .flag {
+//     .category {
+//       &__right {
+//         &--link {
+//           li {
+//             font-size: 16px !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 768px) {
+  .header {
+    .title {
+      font-size: 60px !important;
+    }
+  }
+
+  .flag {
+    .category {
+      &__right {
+        display: none !important;
+      }
+
+      label {
+        display: block !important;
+      }
+    }
+  }
+
+  .brand {
+    &__cate {
+      p {
+        font-size: 26px;
+        font-family: $anton;
+        letter-spacing: 4px;
+      }
+
+      ul {
+        li {
+          letter-spacing: 2px !important;
+          font-size: 18px !important;
+          padding: 0px 10px !important;
+        }
+      }
+    }
+  }
+
+  .message__container {
+    flex-direction: column;
+    &--form {
+      width: 355px !important;
+
+      input,
+      button {
+        font-size: 16px !important;
+        margin: 5px auto !important;
+      }
+    }
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    .title {
+      font-size: 40px !important;
+    }
+  }
+
+  .service {
+    h1 {
+      font-size: 44px;
+
+      &::after,
+      &::before {
+        font-size: 48px !important;
+      }
+    }
+  }
+
+  .brand {
+    &__cate {
+      p {
+        font-size: 26px;
+        font-family: $anton;
+        letter-spacing: 4px;
+      }
+
+      ul {
+        li {
+          letter-spacing: 0px !important;
+          font-size: 16px !important;
+          padding: 0px 7px !important;
+        }
+      }
+    }
+
+    &__info {
+      font-size: 16px !important;
+
+      &--more {
+        margin-top: 20px;
+
+        a {
+          font-size: 16px !important;
+
+          width: 40px !important;
+          height: 40px !important;
+          line-height: 40px !important;
+
+          letter-spacing: 2px !important;
+
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .client {
+    p {
+      font-size: 22px !important;
+    }
+
+    .prev.slick-arrow,
+    .next.slick-arrow {
+      display: none !important;
+    }
+  }
+}
